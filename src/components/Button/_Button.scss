@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.pa{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-top: 2rem;
+
+    button{
+        width:120px;
+        height: 60px;
+        border-radius: 10em;
+        border: 2px solid;
+        color: white;
+        font-family:'Russo One', sans-serif;
+        background:radial-gradient(circle, rgba(37,37,54,1) 0%, rgba(110,98,98,1) 71%);
+        font-size: 1.2rem;
+        font-weight: 400; 
+        transition: color 1s cubic-bezier(0.32, 0, 0.67, 0) 0s;
+        animation: myAnim 3s cubic-bezier(0.7, 0, 0.84, 0) 0s 7 normal forwards;
+        @keyframes myAnim {
+            0%,
+            50%,
+            100% {
+                opacity: 1;
+            }
+        
+            25%,
+            75% {
+                opacity: 0;
+            }
+        }
+        &:hover{
+            animation: none;
+            font-size: 1.3rem;
+            color: #acacac;
+        }
+    }
+}
+
